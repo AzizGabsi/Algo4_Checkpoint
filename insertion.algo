@@ -1,0 +1,25 @@
+ALGORITHM Insertion
+VAR
+    i,j : INTEGER
+    arr: ARRAY_OF INTEGER[10];
+BEGIN
+    for i from 1 to arr.length-1 step 1 do
+    
+    for j = i AND j > 0 ; step -1 do 
+       
+       if (arr[j] < arr [j-1] ) do
+           temp := arr[j]
+           arr[j] := arr[j-1]
+           arr [j-1] := temp 
+        else
+            break
+        end if
+    
+    end for
+
+    write (arr)
+END
+
+
+
+
